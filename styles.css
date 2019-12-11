@@ -1,0 +1,114 @@
+
+
+body{
+	background-image: url("Tree.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+header h1{
+	text-align: center;
+	color: rgb(144, 238, 144, 2.0);
+}
+	
+
+header nav{
+         
+		color: forestgreen;
+		margin: 2.5em;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+	 	background-color: rgba(255, 255, 255, 0.8);
+}
+		
+	 
+.Indexheader{
+	 text-align: center;
+ }
+
+table#InfoTable {
+	width: 100%;
+	
+	
+	
+}
+
+	table#InfoTable, table th, td {
+		border: 1px solid black;
+	
+	}
+
+ 
+   
+
+		
+	
+
+	main p{
+		color:rgb(179, 255, 255);
+		padding: 1em;
+		font-size: 1.3em;
+	}
+a{
+  text-decoration: none;
+  padding: 1em;
+  transition: all 0.478s;
+
+}  
+	main{
+		width: 90%;
+		margin:auto;
+		background-color: rgb(240,248,255,0.7);
+		/*no flex here*/
+		
+		
+		
+	}
+	a:hover { 
+  background-color: rgb(139,69,19, 0.8);
+  font-size: 1.5em;
+	}
+	
+	.Sections{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items:center;
+	height: auto;
+	}/*no auto width*/
+	
+	.Sections section{
+		text-align:center;
+		flex:1;
+		min-width:10em;
+		margin:1em;
+  }
+  #second{
+	  border-right:0.1em solid black;
+	  border-left:0.1em solid black;
+  }
+  
+  .Sections img{
+	  width: 50%;
+	  height: auto;
+	
+  }
+	  
+@media screen and (max-width:1024px){/*When the screen is less than 1024px e.g. phone*/
+	.Sections section{
+		flex-basis:100%;
+	}
+	#second{
+		padding:1em 0;
+		border-right:0;
+		border-left:0;
+		border-top:0.1em solid black;
+		border-bottom:0.1em solid black;
+
+	}
+	header nav{
+		font-size:0.75em;
+		flex-direction: column;
+		text-align:center;
+	}
+}
